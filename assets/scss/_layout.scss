@@ -147,6 +147,7 @@ hr {
     width: 85%;
     //border-bottom: 1px dashed lighten($light-gray-color, 10%);
   }
+  
 
   .date-label {
     //border: 1px solid lighten($light-gray-color, 10%);
@@ -156,6 +157,17 @@ hr {
     @extend .pull-right;
   }
 
+}
+
+a[data-url]::after {
+  content: "↪ "attr(data-url);
+  position: absolute;
+  top: -1em;
+  left: 0px;
+  font-size: 0.275em;
+  white-space: nowrap;
+  opacity: 0.4;
+  font-family: JudeMediumItalic;
 }
 
 .post-meta {
