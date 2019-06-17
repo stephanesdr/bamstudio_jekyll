@@ -1,6 +1,7 @@
 // Typography
-@import url('https://fonts.googleapis.com/css?family=Overpass+Mono:400,700');
-$base-font-family: 'Overpass Mono', monospace;
+@import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700|Source+Sans+Pro&display=swap');
+$base-font-family: 'Gentium Book Basic',serif;
+$sub-font-family: 'Source Sans Pro',sans-serif;
 $heading-font-family: $base-font-family;
 
 // Font Sizes
@@ -17,7 +18,7 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$primary-color: #868686;
+$primary-color: #000000;
 $action-color: $primary-color;
 $white-color: #fff;
 $black-color: #000;

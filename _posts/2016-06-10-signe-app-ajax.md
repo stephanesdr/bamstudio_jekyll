@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "How to Download or Use This Theme"
+title: "Building an app in full ajax for support teacher and student"
 comments: true
-description: "How to Download or Use This Theme"
+description: "website full ajax - platform for student & teacher"
 keywords: "dummy content"
 category: "webdesign"
 number: 1
