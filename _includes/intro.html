@@ -1,5 +1,12 @@
 <section class="intro">
   <div class="container">
-    <p class="lead">Hi, I'm John Doe. I do stuffs with computer and sometimes write about it here. I'm from Penang, MY and I ship code at <a href="#">Microsoft</a>.</p>
+<div class="darkmode" onclick="myNightMode()">
+  <a id="shift"
+    style="cursor: pointer"
+    onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'bright' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')"
+    title="Switch to light or dark theme">
+    <div id="weather" class="sun"></div>
+  </a>
+</div>
   </div>
 </section>
