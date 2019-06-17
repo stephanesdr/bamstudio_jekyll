@@ -4,6 +4,8 @@ title: "How to Download or Use This Theme"
 comments: true
 description: "How to Download or Use This Theme"
 keywords: "dummy content"
+category: "webdesign"
+number: 1
 ---
 
 ### Use this theme as you main site
