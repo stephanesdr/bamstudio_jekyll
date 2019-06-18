@@ -8,5 +8,4 @@ author: Stéphane
 category: "article"
 number: 1
 ---
-
 <img src="{{site.baseurl}}/assets/images/work-flow-ror.png">

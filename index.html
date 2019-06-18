@@ -2,48 +2,41 @@
 layout: default
 ---
 
-{% include intro.html %}
-
-
-<!-- <button id="sort-tab">ICI</button> -->
 
 
 
+{% include side.html %}
+
+
+<div class="item">
+  {% include tab.html %}
+  {% include intro.html %}
+  
+  {% assign i = 1 %}
+  <div class="wrap-projects">
     {% for post in site.posts %}
-
-      <!-- {% unless post.next %}
-        <p class="category-title">{{ post.date | date: '%Y' }}</p>
-      {% else %}
-        {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-        {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-        {% if year != nyear %}
-          <h2 class="category-title">{{ post.date | date: '%Y' }}</h2>
-        {% endif %} -->
-      <!-- {% endunless %} -->
-
-      <div class="projects">
-        <!-- <span class="post-meta date-label">{{ post.date | date: "%b %d" }}</span> -->
-        <!-- <p class="post-meta ">{{ post.date | date: "%Y" }}</p></br> -->
-
-
-        <p>
-          <span class="category" {% if post.category == 'graphic' %} style="color: rgb(58, 198, 176);"
-            {% elsif post.category == 'dev'%} style="color: rgb(109, 84, 219);"
-            {% elsif post.category == 'webdesign'%} style="color: rgb(248, 149, 103);"
-            {% endif %}> {{ post.category }}</span>
-
-
-          <a data-number="{{ post.number }}" 
-             href="{{ post.url | prepend: site.baseurl | prepend: site.url }}"
-             data-url="{{ post.date | date: '%Y' }}">
-              {{ post.title }} <b></b>
-            
-            </a>
-           </p>
-           
-
+  
+    <div class="projects">
+      <p>
+        <span class="category" 
+          {% if post.category == 'graphic' %} 
+            style="color: rgb(58, 198, 176);"
+          {% elsif post.category == 'dev'%} 
+            style="color: rgb(109, 84, 219);" 
+          {% elsif post.category == 'webdesign'%}
+            style="color: rgb(248, 149, 103);" 
+          {% endif %} data-category="{{ post.category }}"></span>
+  
+        <a data-number="{{ post.number | replace: post.number, i }}"
+          href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" 
+          data-url="{{ post.date | date: '%Y' }}">
+          {{ post.title }} 
+          <b></b>
+        </a>
+      </p>
+    </div><!-- end of projects -->
+    {% assign i = i | plus:1 %}
     {% endfor %}
   </div>
 
-  
-
+</div><!-- end of items -->

@@ -1,0 +1,22 @@
+<div id="tabdev">
+ <p class="btn-custom dev">Development</p>
+ <ul>
+  {% for post in site.categories.dev %}
+  {% if post.url %}
+  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endif %}
+  {% endfor %}
+ </ul>
+</div>
+
+
+<div id="tab-graphic">
+ <p class="btn-custom graphic">Graphic design</p>
+ <ul>
+  {% for post in site.categories.graphic %}
+  {% if post.url %}
+  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endif %}
+  {% endfor %}
+ </ul>
+</div>

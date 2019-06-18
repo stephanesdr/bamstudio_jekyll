@@ -9,9 +9,11 @@ published: true
     <div class="wrapper">
       {% include darkmode.html %}
       <!-- {% include header.html %} -->
-      {{ content }}
-      <!-- {% include footer.html %} -->
+      <div class="container">
+        
+        {{ content }}
+      </div>
     </div>
-    <!-- {% include foot.html %} -->
-  </body>
+      {% include footer.html %}
+      </body>
 </html>
